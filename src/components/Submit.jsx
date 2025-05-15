@@ -12,7 +12,7 @@ function Submit({ setMessage, setStatus, selected }) {
                 })
             };
 
-            const res = await fetch('http://localhost:3000/postform', options);
+            const res = await fetch('https://dev-form-backend.onrender.com/postform', options);
 
             const data = await res.json();
             console.log(data);
